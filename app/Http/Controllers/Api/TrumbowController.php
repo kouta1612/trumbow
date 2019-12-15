@@ -11,13 +11,15 @@ class TrumbowController extends Controller
 {
     public function upload()
     {
+        // リサイズ
         $image = Image::make(request()->file('image'))->resize(300, null, function ($constraint) {
             $constraint->aspectRatio();
         });
-        $name = request()->file('image')->hashName();
-        Storage::put("trumbow/{$name}", (string) $image->encode());
-        return [
-            'success' => true
-        ];
+        // 画像のハッシュ名を取得
+        $hashName = request()->file('image')->hashName();
+        // publicストレージに保存
+        Storage::put("trumbow/{$hashName}", (string) $image->encode());
+        // レスポンスを返す
+        return ['success' => true, 'url' => asset("storage/trumbow/{$hashName}")];
     }
 }
