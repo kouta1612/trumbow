@@ -15,4 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
 
 mix.js('resources/js/trumbow.js', 'public/js')
+    .js('node_modules/trumbowyg/plugins/upload/trumbowyg.upload.js', 'public/js')
     .copy('node_modules/trumbowyg/dist/ui/icons.svg', 'public/svg');

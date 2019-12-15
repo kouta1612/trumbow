@@ -94,7 +94,14 @@
 /***/ (function(module, exports) {
 
 $.trumbowyg.svgPath = '/svg/icons.svg';
-$('#trumbow').trumbowyg();
+$('#trumbow').trumbowyg({
+  btns: [['upload']],
+  plugins: {
+    upload: {
+      serverPath: '/'
+    }
+  }
+});
 
 /***/ }),
 

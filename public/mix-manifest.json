@@ -2,5 +2,6 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/js/trumbow.js": "/js/trumbow.js",
+    "/js/trumbowyg.upload.js": "/js/trumbowyg.upload.js",
     "/svg/icons.svg": "/svg/icons.svg"
 }

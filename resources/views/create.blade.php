@@ -7,5 +7,6 @@
 @endsection
 
 @section('script')
+    <script src="/js/trumbowyg.upload.js"></script>
     <script src="/js/trumbow.js"></script>
 @endsection

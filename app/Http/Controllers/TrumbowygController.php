@@ -10,4 +10,9 @@ class TrumbowygController extends Controller
     {
         return view('create');
     }
+
+    public function store()
+    {
+        //
+    }
 }
