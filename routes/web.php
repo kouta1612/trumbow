@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'TrumbowygController@create');
+Route::get('/', 'TrumbowygController@index');
+Route::get('/create', 'TrumbowygController@create');
+Route::post('/store', 'TrumbowygController@store');

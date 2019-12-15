@@ -1,9 +1,8 @@
 @extends('app')
 @section('content')
-    <form action="/store" method="get">
+    <form action="/store" method="post">
+        @csrf
         <textarea name="content" id="trumbow"></textarea>
-        <p class="success"></p>
-        <p class="error"></p>
         <button type="submit">送信</button>
     </form>
 @endsection
