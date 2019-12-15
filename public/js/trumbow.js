@@ -98,7 +98,14 @@ $('#trumbow').trumbowyg({
   btns: [['upload']],
   plugins: {
     upload: {
-      serverPath: '/'
+      serverPath: '/api/upload',
+      fileFieldName: 'image',
+      success: function success() {
+        $('.success').html("upload success");
+      },
+      error: function error() {
+        $('.error').html("upload error");
+      }
     }
   }
 });

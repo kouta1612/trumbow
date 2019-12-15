@@ -5,7 +5,14 @@ $('#trumbow').trumbowyg({
     ],
     plugins: {
         upload: {
-            serverPath: '/'
+            serverPath: '/api/upload',
+            fileFieldName: 'image',
+            success: function () {
+                $('.success').html("upload success");
+            },
+            error: function () {
+                $('.error').html("upload error");
+            }
         }
     }
 });
