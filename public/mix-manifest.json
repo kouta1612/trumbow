@@ -3,5 +3,7 @@
     "/css/app.css": "/css/app.css",
     "/js/trumbow.js": "/js/trumbow.js",
     "/js/trumbowyg.upload.js": "/js/trumbowyg.upload.js",
+    "/js/upload.js": "/js/upload.js",
+    "/js/validate.js": "/js/validate.js",
     "/svg/icons.svg": "/svg/icons.svg"
 }

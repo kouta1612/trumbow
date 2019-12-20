@@ -1,13 +1,8 @@
 @extends('app')
 @section('content')
-    <form action="/store" method="post">
-        @csrf
-        <textarea name="content" id="trumbow"></textarea>
-        <button type="submit">送信</button>
-    </form>
+    <input type="file" name="image" id="image">
 @endsection
 
 @section('script')
-    <script src="/js/trumbowyg.upload.js"></script>
-    <script src="/js/trumbow.js"></script>
+    <script src="/js/upload.js"></script>
 @endsection

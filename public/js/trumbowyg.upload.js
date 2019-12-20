@@ -381,7 +381,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kouta/workspace/laravel/trumbowyg/node_modules/trumbowyg/plugins/upload/trumbowyg.upload.js */"./node_modules/trumbowyg/plugins/upload/trumbowyg.upload.js");
+module.exports = __webpack_require__(/*! /Users/kota.hagiwara/workspace/trumbow/node_modules/trumbowyg/plugins/upload/trumbowyg.upload.js */"./node_modules/trumbowyg/plugins/upload/trumbowyg.upload.js");
 
 
 /***/ })

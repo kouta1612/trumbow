@@ -6,5 +6,5 @@
             <li>Content：{!! $post->content !!}</li>
         </div>
     @endforeach
-    <a href="/create">作成</a>
+    <a href="/trumbow/create">作成</a>
 @endsection

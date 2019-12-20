@@ -13,4 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/upload', 'Api\TrumbowController@upload');
+Route::post('upload', 'Api\FileUploadController@upload');
+Route::post('/trumbow/upload', 'Api\TrumbowController@upload');

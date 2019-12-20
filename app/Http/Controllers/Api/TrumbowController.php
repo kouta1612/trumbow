@@ -11,6 +11,8 @@ class TrumbowController extends Controller
 {
     public function upload()
     {
+        \Log::debug(request()->all());
+
         // リサイズ
         $image = Image::make(request()->file('image'))->resize(300, null, function ($constraint) {
             $constraint->aspectRatio();

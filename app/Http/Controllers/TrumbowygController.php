@@ -10,17 +10,17 @@ class TrumbowygController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('index', compact('posts'));
+        return view('trumbow.index', compact('posts'));
     }
 
     public function create()
     {
-        return view('create');
+        return view('trumbow.create');
     }
 
     public function store()
     {
         Post::create(['content' => request()->content]);
-        return redirect('/');
+        return redirect('/trumbow');
     }
 }

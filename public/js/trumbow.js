@@ -98,8 +98,19 @@ $('#trumbow').trumbowyg({
   btns: [['upload']],
   plugins: {
     upload: {
-      serverPath: '/api/upload',
+      serverPath: '/api/trumbow/upload',
       fileFieldName: 'image',
+      data: [{
+        name: 'trumbowyg',
+        value: $('#trumbow').trumbowyg('html')
+      }, // { name: 'test', value: $('form').serialize() },
+      {
+        name: 'key',
+        value: 'value'
+      }],
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      },
       urlPropertyName: "url"
     }
   }
@@ -114,7 +125,7 @@ $('#trumbow').trumbowyg({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kouta/workspace/laravel/trumbowyg/resources/js/trumbow.js */"./resources/js/trumbow.js");
+module.exports = __webpack_require__(/*! /Users/kota.hagiwara/workspace/trumbow/resources/js/trumbow.js */"./resources/js/trumbow.js");
 
 
 /***/ })
